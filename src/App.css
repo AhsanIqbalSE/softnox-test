@@ -1,0 +1,202 @@
+img {
+  max-width: 100%;
+}
+.homePage {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.homePage .headM {
+  background: #48007f;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 20px 15px 0 15px;
+  box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.75);
+}
+.homePage .headM .r1 {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.homePage .headM .logo {
+  width: 70px;
+  margin-right: 20px;
+  text-transform: capitalize;
+}
+.homePage .headM .heading {
+  font-size: 30px;
+  color: #fff;
+}
+.homePage .headM .navRow {
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.homePage .headM .navRow .navItem {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+.homePage .headM .navRow .navItem.active {
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  border-bottom: 3px solid #fff;
+}
+.homePage .matchCardMain {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: none;
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.homePage .matchCardMain .matchCard {
+  flex-basis: 50%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 22px;
+}
+.homePage .matchCardMain .matchCard:nth-child(even) {
+  border-right: 0;
+}
+.homePage .matchCardMain .matchCard .r1 {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.homePage .matchCardMain .matchCard .scoreR {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.homePage .matchCardMain .matchCard .scoreR .team {
+  display: flex;
+  align-items: center;
+}
+.homePage .matchCardMain .matchCard .scoreR .team .ico {
+  width: 45px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+.homePage .matchCardMain .matchCard .statusR {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.homePage .matchCardMain .matchCard .statusR .status {
+  font-size: 22px;
+  margin-right: 15px;
+}
+.homePage .matchCardMain .matchCard .statusR .thumbNail {
+  max-width: 100px;
+  position: relative;
+  margin-left: auto;
+}
+.homePage .matchCardMain .matchCard .statusR .thumbNail .play {
+  padding: 5px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 13px;
+}
+
+.loaderModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loaderModal .loaderCard {
+  max-width: 300px;
+  width: 100%;
+  height: 180px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  .homePage .matchCardMain .matchCard .scoreR {
+    font-size: 18px;
+  }
+  .homePage .headM .navRow {
+    font-size: 22px;
+  }
+  .homePage .matchCardMain .matchCard .statusR .status{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+  .homePage .headM .navRow {
+    font-size: 20px;
+  }
+  .homePage .matchCardMain .matchCard .scoreR {
+    font-size: 18px;
+  }
+  .homePage .matchCardMain .matchCard .statusR .status{
+    font-size: 20px;
+  }
+  .homePage .matchCardMain .matchCard {
+    flex-basis: 100%;
+  }
+}
+@media screen and (max-width:576px) {
+  .homePage .matchCardMain .matchCard {
+    flex-basis: 100%;
+  }
+  .homePage .headM .navRow {
+    font-size: 13px;
+    
+  }
+  .homePage .headM .navRow .navItem {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .homePage {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .homePage .headM .heading{
+    font-size: 25px;
+  }
+  .homePage .matchCardMain .matchCard .scoreR {
+    font-size: 14px;
+  }
+  .homePage .matchCardMain .matchCard .statusR .status{
+    font-size: 16px;
+  }
+  .homePage .matchCardMain .matchCard .r1 {
+    font-size: 14px;
+  }
+  .homePage .matchCardMain .matchCard {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .homePage .matchCardMain .matchCard .scoreR .team .ico{
+    margin-right: 7px;
+  }
+  .homePage .matchCardMain .matchCard .statusR .thumbNail{
+    max-width: 80px;
+  }
+}
